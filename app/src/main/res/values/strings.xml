@@ -6,4 +6,13 @@
     <string name="we_like_android">We like Android!</string>
     <string name="lesson_01_intent">01 Intent</string>
     <string name="name_lesson_01_intent">Lesson 01 Intent</string>
+
+    <string name="lesson_02_layout">02 Layout</string>
+    <string name="name_lesson_02_layout">Lesson 02 Layout</string>
+    <string name="_1">В студии версии 3.0 появились новые возможности. Теперь вы можете задать
+        аватар, имя и случайный текст без создания собственных ресурсов. Это бывает полезно,
+        когда ресурсы берутся из внешнего источника. Вам не нужно создавать временные ресурсы,
+        которые увеличивают размер приложения и которые можно забыть удалить.</string>
+
+
 </resources>

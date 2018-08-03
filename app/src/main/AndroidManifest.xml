@@ -16,11 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TextViewActivity"
-            android:label="@string/name_lesson_01_intent"/>
-        <activity android:name=".Lesson01_Intent"
-            android:label="@string/name_lesson_01_intent">
-        </activity>
+        <activity
+            android:name=".TextViewActivity"
+            android:label="@string/name_lesson_01_intent" />
+        <activity
+            android:name=".Lesson01_Intent"
+            android:label="@string/name_lesson_01_intent" />
+        <activity
+            android:name=".Lesson02_Layout"
+            android:label="@string/name_lesson_02_layout" />
     </application>
 
 </manifest>

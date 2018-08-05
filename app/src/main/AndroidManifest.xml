@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="by.androidacademyminsk">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,14 +19,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TextViewActivity"
+            android:name=".Les_01_Intent.TextViewActivity"
             android:label="@string/name_lesson_01_intent" />
         <activity
-            android:name=".Lesson01_Intent"
+            android:name=".Les_01_Intent.Lesson01_Intent"
             android:label="@string/name_lesson_01_intent" />
         <activity
-            android:name=".Lesson02_Layout"
+            android:name=".Les_02_Layout.Lesson02_Layout"
             android:label="@string/name_lesson_02_layout" />
+        <activity
+            android:name=".Les_03_RecyclerView.Lesson03_RecyclerView"
+            android:label="@string/name_lesson_03_RecyclerView" />
+        <activity android:name=".Les_03_RecyclerView.Les03FullInfoActivity"
+            android:label="@string/name_lesson_03_RecyclerView"></activity>
     </application>
 
 </manifest>

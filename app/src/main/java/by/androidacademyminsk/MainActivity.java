@@ -8,9 +8,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import by.androidacademyminsk.Les_01_Intent.Lesson01_Intent;
+import by.androidacademyminsk.Les_02_Layout.Lesson02_Layout;
+import by.androidacademyminsk.Les_03_RecyclerView.Lesson03_RecyclerView;
+
 public class MainActivity extends AppCompatActivity {
 
-    private Button buttonLes01, buttonLes02;
+    private Button buttonLes01, buttonLes02, buttonLes03;
     private ImageView imageView;
 
     @Override
@@ -20,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonLes01 = findViewById(R.id.buttonLesson01);
         buttonLes02 = findViewById(R.id.buttonLesson02);
+        buttonLes03 = findViewById(R.id.buttonLesson03);
         imageView = findViewById(R.id.logo);
     }
 
@@ -29,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         clickLesson01();
         clickLesson02();
+        clickLesson03();
     }
 
     private void clickLesson01(){
@@ -47,6 +53,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.e("AAAA", "AAAA");
                 Intent intent = new Intent(MainActivity.this, Lesson02_Layout.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void clickLesson03(){
+        buttonLes03.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.e("AAAA", "AAAA");
+                Intent intent = new Intent(MainActivity.this, Lesson03_RecyclerView.class);
                 startActivity(intent);
             }
         });

@@ -14,5 +14,7 @@
         когда ресурсы берутся из внешнего источника. Вам не нужно создавать временные ресурсы,
         которые увеличивают размер приложения и которые можно забыть удалить.</string>
 
+    <string name="lesson_03_RecyclerView">03_RecyclerView</string>
+    <string name="name_lesson_03_RecyclerView">Lesson 03_RecyclerView</string>
 
 </resources>

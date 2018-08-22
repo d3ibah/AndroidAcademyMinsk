@@ -21,28 +21,26 @@
         android:id="@+id/buttonLesson01"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:background="#54b1f4"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorBtn01"
         android:text="@string/lesson_01_intent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <Button
         android:id="@+id/buttonLesson02"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#2c93de"
+        android:background="@color/colorBtn02"
         android:text="@string/lesson_02_layout"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLesson03"
+        android:textColor="@color/colorText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLesson01" />
@@ -51,13 +49,43 @@
         android:id="@+id/buttonLesson03"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="#75a7cc"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn03"
         android:text="@string/lesson_03_RecyclerView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/colorText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLesson02" />
+
+    <Button
+        android:id="@+id/buttonLesson04"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn04"
+        android:text="@string/lesson_04_MultiThreads"
+        android:textColor="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLesson03" />
+
+    <Button
+        android:id="@+id/buttonLesson05"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBtn05"
+        android:text="@string/lesson_05_blablabla"
+        android:textColor="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLesson04" />
 
 </android.support.constraint.ConstraintLayout>

@@ -4,60 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Les_04_Base_Multitreading.AsyncTaskActivity"
-    android:background="@color/colorAsync">
-
+    tools:context=".les_04_Base_Multitreading.Les04ThreadsActivity"
+    android:background="@color/colorThreads">
 
     <Button
-        android:id="@+id/btnAsyncCreate"
+        android:id="@+id/btnThreadsCreate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Create"
-        android:textColor="@color/colorMultiThreadsText"
-        app:layout_constraintEnd_toStartOf="@+id/btnAsyncStart"
+        android:textColor="@color/colorMultiThreadsTextLight"
+        app:layout_constraintEnd_toStartOf="@+id/btnThreadsStart"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/Widget.AppCompat.Button.Borderless"/>
 
     <Button
-        android:id="@+id/btnAsyncStart"
+        android:id="@+id/btnThreadsStart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Start"
-        android:textColor="@color/colorMultiThreadsText"
-        app:layout_constraintEnd_toStartOf="@+id/btnAsyncCancel"
+        android:textColor="@color/colorMultiThreadsTextLight"
+        app:layout_constraintEnd_toStartOf="@+id/btnThreadsCancel"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnAsyncCreate"
+        app:layout_constraintStart_toEndOf="@+id/btnThreadsCreate"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/Widget.AppCompat.Button.Borderless"/>
 
     <Button
-        android:id="@+id/btnAsyncCancel"
+        android:id="@+id/btnThreadsCancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Cancel"
-        android:textColor="@color/colorMultiThreadsText"
+        android:textColor="@color/colorMultiThreadsTextLight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnAsyncStart"
+        app:layout_constraintStart_toEndOf="@+id/btnThreadsStart"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/Widget.AppCompat.Button.Borderless"/>
 
     <TextView
-        android:id="@+id/tvAsync"
+        android:id="@+id/tvThreads"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:gravity="center"
+        android:textColor="@color/colorMultiThreadsTextLight"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAsyncStart" />
+        app:layout_constraintTop_toBottomOf="@+id/btnThreadsStart" />
+
 </android.support.constraint.ConstraintLayout>

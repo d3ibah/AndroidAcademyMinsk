@@ -1,4 +1,4 @@
-package by.androidacademyminsk.Les_03_RecyclerView;
+package by.androidacademyminsk.les_03_RecyclerView;
 
 import android.net.Uri;
 

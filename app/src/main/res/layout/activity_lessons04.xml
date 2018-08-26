@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Les_04_Base_Multitreading.Lesson04_Multithreading">
+    tools:context=".les_04_Base_Multitreading.Lesson04_Multithreading">
 
     <Button
         android:id="@+id/buttonAsync"

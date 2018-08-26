@@ -1,4 +1,4 @@
-package by.androidacademyminsk.Les_01_Intent;
+package by.androidacademyminsk.les_01_Intent;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

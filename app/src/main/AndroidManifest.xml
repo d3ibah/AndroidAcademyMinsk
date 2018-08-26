@@ -19,24 +19,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Les_01_Intent.TextViewActivity"
+            android:name=".les_01_Intent.TextViewActivity"
             android:label="@string/name_lesson_01_intent" />
         <activity
-            android:name=".Les_01_Intent.Lesson01_Intent"
+            android:name=".les_01_Intent.Lesson01_Intent"
             android:label="@string/name_lesson_01_intent" />
         <activity
-            android:name=".Les_02_Layout.Lesson02_Layout"
+            android:name=".les_02_Layout.Lesson02_Layout"
             android:label="@string/name_lesson_02_layout" />
         <activity
-            android:name=".Les_03_RecyclerView.Lesson03_RecyclerView"
+            android:name=".les_03_RecyclerView.Lesson03_RecyclerView"
             android:label="@string/name_lesson_03_RecyclerView" />
         <activity
-            android:name=".Les_03_RecyclerView.Les03FullInfoActivity"
+            android:name=".les_03_RecyclerView.Les03FullInfoActivity"
             android:label="@string/name_lesson_03_RecyclerView" />
-        <activity android:name=".Les_04_Base_Multitreading.Lesson04_Multithreading" />
-        <activity android:name=".Les_04_Base_Multitreading.AsyncTaskActivity" />
-        <activity android:name=".Les_04_Base_Multitreading.LoaderActivity" />
-        <activity android:name=".Les_04_Base_Multitreading.ThreadsActivity"></activity>
+        <activity android:name=".les_04_Base_Multitreading.Lesson04_Multithreading" />
+        <activity android:name=".les_04_Base_Multitreading.Les04AsyncTaskActivity" />
+        <activity android:name=".les_04_Base_Multitreading.Les04LoaderActivity" />
+        <activity android:name=".les_04_Base_Multitreading.Les04ThreadsActivity" />
+        <activity android:name=".les_06_DB.Lesson06_DB" />
+        <activity android:name=".les_05_Retrofit.Lesson05_Retrofit"></activity>
     </application>
 
 </manifest>

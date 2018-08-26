@@ -14,7 +14,7 @@
         когда ресурсы берутся из внешнего источника. Вам не нужно создавать временные ресурсы,
         которые увеличивают размер приложения и которые можно забыть удалить.</string>
 
-    <string name="lesson_03_RecyclerView">03_RecyclerView</string>
+    <string name="lesson_03_RecyclerView">03 RecyclerView</string>
     <string name="name_lesson_03_RecyclerView">Lesson 03_RecyclerView</string>
 
     <string name="lesson_04_MultiThreads">04 MultiThreads</string>
@@ -23,5 +23,7 @@
     <string name="threads_activity">Threads Activity</string>
 
     <string name="lesson_05_blablabla">05 Bla-bla-bla</string>
+
+    <string name="lesson_06_DB">06 Database</string>
 
 </resources>

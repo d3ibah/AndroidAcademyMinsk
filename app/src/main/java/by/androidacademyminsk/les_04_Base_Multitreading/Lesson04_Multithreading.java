@@ -1,4 +1,4 @@
-package by.androidacademyminsk.Les_04_Base_Multitreading;
+package by.androidacademyminsk.les_04_Base_Multitreading;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +14,7 @@ public class Lesson04_Multithreading extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_lessons04);
         buttonAsync = findViewById(R.id.buttonAsync);
         buttonLoader = findViewById(R.id.buttonLoader);
         buttonThreads = findViewById(R.id.buttonThreads);
@@ -22,7 +22,7 @@ public class Lesson04_Multithreading extends AppCompatActivity {
         buttonAsync.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Lesson04_Multithreading.this, AsyncTaskActivity.class);
+                Intent intent = new Intent(Lesson04_Multithreading.this, Les04AsyncTaskActivity.class);
                 startActivity(intent);
             }
         });
@@ -30,7 +30,7 @@ public class Lesson04_Multithreading extends AppCompatActivity {
         buttonLoader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Lesson04_Multithreading.this, LoaderActivity.class);
+                Intent intent = new Intent(Lesson04_Multithreading.this, Les04LoaderActivity.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +38,7 @@ public class Lesson04_Multithreading extends AppCompatActivity {
         buttonThreads.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Lesson04_Multithreading.this, ThreadsActivity.class);
+                Intent intent = new Intent(Lesson04_Multithreading.this, Les04ThreadsActivity.class);
                 startActivity(intent);
             }
         });

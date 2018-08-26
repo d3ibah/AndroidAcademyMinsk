@@ -1,17 +1,14 @@
-package by.androidacademyminsk.Les_04_Base_Multitreading;
+package by.androidacademyminsk.les_04_Base_Multitreading;
 
-import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.concurrent.TimeUnit;
-
 import by.androidacademyminsk.R;
 
-public class AsyncTaskActivity extends AppCompatActivity {
+public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncTaskEvents{
 
     TextView tvAsync;
     Button btnAsyncCreate, btnAsyncStart, btnAsyncCancel;
@@ -19,7 +16,7 @@ public class AsyncTaskActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_async_task);
+        setContentView(R.layout.activity_lessons04_asynctask);
 
         tvAsync = findViewById(R.id.tvAsync);
         btnAsyncCreate = findViewById(R.id.btnAsyncCreate);
@@ -27,13 +24,33 @@ public class AsyncTaskActivity extends AppCompatActivity {
         btnAsyncCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                CounterAsyncTask counterAsyncTask = new CounterAsyncTask();
-                counterAsyncTask.execute();
+//                CounterAsyncTask counterAsyncTask = new CounterAsyncTask();
+//                counterAsyncTask.execute();
             }
         });
     }
 
-    class CounterAsyncTask extends AsyncTask<Void, Integer, Void> {
+    @Override
+    public void onPreExecute() {
+
+    }
+
+    @Override
+    public void onPostExecute() {
+
+    }
+
+    @Override
+    public void onProgressUpdate(Integer integer) {
+
+    }
+
+    @Override
+    public void onCancel() {
+
+    }
+
+/*    class CounterAsyncTask extends AsyncTask<Void, Integer, Void> {
         @Override
         protected Void doInBackground(Void... voids) {
             try {
@@ -61,6 +78,6 @@ public class AsyncTaskActivity extends AppCompatActivity {
         protected void onProgressUpdate(Integer... values) {
             tvAsync.setText("" + values[0]);
         }
-    }
+    }*/
 }
 

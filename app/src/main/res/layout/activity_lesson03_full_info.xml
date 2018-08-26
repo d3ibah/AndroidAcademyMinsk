@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Les_03_RecyclerView.Les03FullInfoActivity">
+    tools:context=".les_03_RecyclerView.Les03FullInfoActivity">
 
     <ImageView
         android:id="@+id/iv_les03_info"

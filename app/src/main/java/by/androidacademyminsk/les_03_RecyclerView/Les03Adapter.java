@@ -1,4 +1,4 @@
-package by.androidacademyminsk.Les_03_RecyclerView;
+package by.androidacademyminsk.les_03_RecyclerView;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -10,7 +10,6 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import by.androidacademyminsk.R;

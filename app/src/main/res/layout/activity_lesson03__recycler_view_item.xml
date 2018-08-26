@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    tools:context=".Les_03_RecyclerView.Lesson03_RecyclerView">
+    tools:context=".les_03_RecyclerView.Lesson03_RecyclerView">
 
     <ImageView
         android:id="@+id/iv_item"

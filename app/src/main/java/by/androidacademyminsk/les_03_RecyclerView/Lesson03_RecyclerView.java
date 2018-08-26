@@ -1,11 +1,10 @@
-package by.androidacademyminsk.Les_03_RecyclerView;
+package by.androidacademyminsk.les_03_RecyclerView;
 
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import by.androidacademyminsk.R;

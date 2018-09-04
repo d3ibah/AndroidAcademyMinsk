@@ -34,9 +34,9 @@
             android:name=".les_03_RecyclerView.Les03FullInfoActivity"
             android:label="@string/name_lesson_03_RecyclerView" />
         <activity android:name=".les_04_Base_Multitreading.Lesson04_Multithreading" />
-        <activity android:name=".les_04_Base_Multitreading.Les04AsyncTaskActivity" />
+        <activity android:name=".les_04_Base_Multitreading.async.Les04AsyncTaskActivity" />
         <activity android:name=".les_04_Base_Multitreading.Les04LoaderActivity" />
-        <activity android:name=".les_04_Base_Multitreading.Les04ThreadsActivity" />
+        <activity android:name=".les_04_Base_Multitreading.handler.Les04ThreadsActivity" />
         <activity android:name=".les_06_DB.Lesson06_DB" />
         <activity android:name=".les_05_Retrofit.Lesson05_Retrofit"></activity>
     </application>

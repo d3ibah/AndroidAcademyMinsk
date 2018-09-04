@@ -1,4 +1,4 @@
-package by.androidacademyminsk.les_04_Base_Multitreading;
+package by.androidacademyminsk.les_04_Base_Multitreading.async;
 
 public interface IAsyncTaskEvents {
 

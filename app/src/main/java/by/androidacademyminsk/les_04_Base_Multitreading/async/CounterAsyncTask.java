@@ -1,4 +1,4 @@
-package by.androidacademyminsk.les_04_Base_Multitreading;
+package by.androidacademyminsk.les_04_Base_Multitreading.async;
 
 import android.os.AsyncTask;
 
@@ -13,8 +13,14 @@ public class CounterAsyncTask extends AsyncTask<Integer, Integer, Integer>{
 
     @Override
     protected Integer doInBackground(Integer... integers) {
+        int start, end;
+        start = integers[0];
+        end = integers[1];
         try {
-            for (int i = 0; i < 11; i++) {
+            for (int i = start; i <= end; i++) {
+                if (isCancelled()){
+                    return i;
+                }
                 publishProgress(i);
                 TimeUnit.SECONDS.sleep(1);
             }

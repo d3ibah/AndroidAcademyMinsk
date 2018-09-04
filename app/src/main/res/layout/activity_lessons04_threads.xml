@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".les_04_Base_Multitreading.Les04ThreadsActivity"
+    tools:context=".les_04_Base_Multitreading.handler.Les04ThreadsActivity"
     android:background="@color/colorThreads">
 
     <Button

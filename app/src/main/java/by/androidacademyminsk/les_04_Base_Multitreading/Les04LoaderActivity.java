@@ -1,8 +1,8 @@
 package by.androidacademyminsk.les_04_Base_Multitreading;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import by.androidacademyminsk.R;
 
 public class Les04LoaderActivity extends AppCompatActivity {

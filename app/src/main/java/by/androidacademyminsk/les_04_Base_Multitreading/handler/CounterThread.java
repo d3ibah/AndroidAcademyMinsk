@@ -1,10 +1,11 @@
 package by.androidacademyminsk.les_04_Base_Multitreading.handler;
 
 import android.os.SystemClock;
-import android.support.annotation.NonNull;
 
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
+
+import androidx.annotation.NonNull;
 
 public class CounterThread extends MySimpleAsyncTask<Integer> {
 

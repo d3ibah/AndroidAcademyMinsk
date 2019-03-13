@@ -1,11 +1,11 @@
 package by.androidacademyminsk.les_04_Base_Multitreading;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
 import by.androidacademyminsk.R;
 import by.androidacademyminsk.les_04_Base_Multitreading.async.Les04AsyncTaskActivity;
 import by.androidacademyminsk.les_04_Base_Multitreading.handler.Les04ThreadsActivity;

@@ -1,8 +1,8 @@
 package by.androidacademyminsk.les_06_DB;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import by.androidacademyminsk.R;
 
 public class Lesson06_DB extends AppCompatActivity {

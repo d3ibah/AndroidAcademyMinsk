@@ -1,6 +1,5 @@
 package by.androidacademyminsk.les_04_Base_Multitreading.async;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +7,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 import by.androidacademyminsk.R;
 
 public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncTaskEvents {

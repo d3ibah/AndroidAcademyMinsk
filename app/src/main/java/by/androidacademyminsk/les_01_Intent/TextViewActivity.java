@@ -1,12 +1,12 @@
 package by.androidacademyminsk.les_01_Intent;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import java.util.Calendar;
 
+import androidx.appcompat.app.AppCompatActivity;
 import by.androidacademyminsk.R;
 
 public class TextViewActivity extends AppCompatActivity {

@@ -1,7 +1,5 @@
 package by.androidacademyminsk.les_03_RecyclerView;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +10,8 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import by.androidacademyminsk.R;
 
 public class Les03Adapter extends RecyclerView.Adapter<Les03Adapter.Les03ViewHolder> {

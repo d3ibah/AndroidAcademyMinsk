@@ -20,8 +20,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static by.androidacademyminsk.les_05_Retrofit.Lesson05_Retrofit.APIKEY;
-
 public class Les05ActivityInfo extends AppCompatActivity {
 
     private static final String EXTRA_ID = "id";
@@ -66,10 +64,10 @@ public class Les05ActivityInfo extends AppCompatActivity {
     }
 
     private void callToNetwork() {
-        Call<Film> call = filmsAPI.getFilm(APIKEY, filmTitle);
+        Call<Film> call = filmsAPI.getFilm(filmTitle);
         call.enqueue(new Callback<Film>() {
             @Override
-            public void onResponse(Call<Film> call, Response<Film> response) {
+            public void onResponse(@NonNull Call<Film> call, @NonNull Response<Film> response) {
                 if (response.isSuccessful()) {
                     Film film = response.body();
                     if (film != null) {
@@ -87,7 +85,7 @@ public class Les05ActivityInfo extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<Film> call, Throwable t) {
+            public void onFailure(@NonNull Call<Film> call, Throwable t) {
                 Log.e("Failure response", "Response is not successful");
             }
         });

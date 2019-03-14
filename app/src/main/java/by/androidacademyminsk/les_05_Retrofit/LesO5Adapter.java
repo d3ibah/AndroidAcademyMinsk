@@ -28,10 +28,6 @@ public class LesO5Adapter extends RecyclerView.Adapter<LesO5Adapter.Les05ViewHol
         void onClick(int position);
     }
 
-    public String getFilmTitle(int position) {
-        return films.getSearch().get(position).getTitle();
-    }
-
     @NonNull
     @Override
     public Les05ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -64,11 +60,11 @@ public class LesO5Adapter extends RecyclerView.Adapter<LesO5Adapter.Les05ViewHol
                     .size();
     }
 
-    public class Les05ViewHolder extends RecyclerView.ViewHolder {
+    protected class Les05ViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView ivPreview;
 
-        public Les05ViewHolder(@NonNull View itemView) {
+        protected Les05ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             ivPreview = itemView.findViewById(R.id.iv_item);

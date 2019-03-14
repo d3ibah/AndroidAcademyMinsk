@@ -11,6 +11,7 @@ import android.widget.EditText;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import by.androidacademyminsk.BaseActivity;
@@ -21,8 +22,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Lesson05_Retrofit extends BaseActivity {
-
-    public static final String APIKEY = "d36caaa2";
 
     private Button searchAction;
     private EditText keywordSource;
@@ -53,7 +52,6 @@ public class Lesson05_Retrofit extends BaseActivity {
                 if (!TextUtils.isEmpty(keyword)) {
                     getResponse();
                     hideKeyboard();
-                    showSnackbar(searchAction, keyword);
                 }
             }
         });
@@ -69,7 +67,9 @@ public class Lesson05_Retrofit extends BaseActivity {
         adapter = new LesO5Adapter(films, new LesO5Adapter.ClickListener() {
             @Override
             public void onClick(int position) {
-                Les05ActivityInfo.show(Lesson05_Retrofit.this, films.getSearch().get(position).getTitle());
+                Les05ActivityInfo.show(Lesson05_Retrofit.this, films.getSearch()
+                                                                    .get(position)
+                                                                    .getTitle());
             }
         });
     }
@@ -93,10 +93,10 @@ public class Lesson05_Retrofit extends BaseActivity {
     }
 
     private void callToNetwork() {
-        Call<Films> call = filmsAPI.getFilms(APIKEY, keyword);
+        Call<Films> call = filmsAPI.getFilms(keyword);
         call.enqueue(new Callback<Films>() {
             @Override
-            public void onResponse(Call<Films> call, Response<Films> response) {
+            public void onResponse(@NonNull Call<Films> call, @NonNull Response<Films> response) {
                 if (response.isSuccessful()) {
                     Films films = response.body();
                     if (films != null) {
@@ -111,7 +111,7 @@ public class Lesson05_Retrofit extends BaseActivity {
             }
 
             @Override
-            public void onFailure(Call<Films> call, Throwable t) {
+            public void onFailure(@NonNull Call<Films> call, @NonNull Throwable t) {
                 Log.e("Failure response", "Response is not successful");
             }
         });

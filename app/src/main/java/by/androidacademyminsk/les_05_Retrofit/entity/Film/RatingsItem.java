@@ -1,4 +1,4 @@
-package by.androidacademyminsk.les_05_Retrofit.entity;
+package by.androidacademyminsk.les_05_Retrofit.entity.Film;
 
 import com.google.gson.annotations.SerializedName;
 

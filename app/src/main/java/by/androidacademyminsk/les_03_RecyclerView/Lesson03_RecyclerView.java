@@ -25,8 +25,7 @@ public class Lesson03_RecyclerView extends AppCompatActivity {
             @Override
             public void onClick(int position) {
                 Intent intent = new Intent(Lesson03_RecyclerView.this, Les03FullInfoActivity.class);
-                int pos = position;
-                intent.putExtra("position", pos);
+                intent.putExtra("position", position);
                 startActivity(intent);
             }
         });

@@ -1,5 +1,6 @@
 package by.androidacademyminsk.les_05_Retrofit;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,8 @@ public class LesO5Adapter extends RecyclerView.Adapter<LesO5Adapter.Les05ViewHol
     private Films films;
     private ClickListener listener;
 
-    public LesO5Adapter(Films films) {
+    public LesO5Adapter(Films films, ClickListener listener) {
+        this.listener = listener;
         this.films = films;
     }
 
@@ -39,13 +41,21 @@ public class LesO5Adapter extends RecyclerView.Adapter<LesO5Adapter.Les05ViewHol
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Les05ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull Les05ViewHolder holder, final int position) {
         SearchItem film = films.getSearch()
                                .get(position);
 
         Glide.with(holder.itemView.getContext())
              .load(film.getPoster())
              .into(holder.ivPreview);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                listener.onClick(position);
+                Log.e("onClick", "position - " + position);
+            }
+        });
     }
 
     @Override

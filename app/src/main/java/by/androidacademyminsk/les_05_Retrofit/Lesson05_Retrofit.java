@@ -51,7 +51,6 @@ public class Lesson05_Retrofit extends BaseActivity {
             public void onClick(View v) {
                 getInputSymbols();
                 if (!TextUtils.isEmpty(keyword)) {
-                    //                    TODO: Waiting implementation
                     getResponse();
                     hideKeyboard();
                     showSnackbar(searchAction, keyword);
@@ -66,8 +65,13 @@ public class Lesson05_Retrofit extends BaseActivity {
                                .trim();
     }
 
-    private void initAdapter(Films films) {
-        adapter = new LesO5Adapter(films);
+    private void initAdapter(final Films films) {
+        adapter = new LesO5Adapter(films, new LesO5Adapter.ClickListener() {
+            @Override
+            public void onClick(int position) {
+                Les05ActivityInfo.show(Lesson05_Retrofit.this, films.getSearch().get(position).getTitle());
+            }
+        });
     }
 
     private void initRecyclerView() {

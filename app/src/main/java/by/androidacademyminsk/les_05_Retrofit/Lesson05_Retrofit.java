@@ -24,6 +24,7 @@ import retrofit2.Response;
 public class Lesson05_Retrofit extends BaseActivity {
 
     private Button searchAction;
+    private Button vogellaAction;
     private EditText keywordSource;
     private RecyclerView recyclerView;
 
@@ -37,6 +38,7 @@ public class Lesson05_Retrofit extends BaseActivity {
         setContentView(R.layout.activity_lesson05_retrofit);
 
         searchAction = findViewById(R.id.les05_button);
+        vogellaAction = findViewById(R.id.les05_vogella);
         keywordSource = findViewById(R.id.les05_editText);
         recyclerView = findViewById(R.id.les05_recycler_view);
 
@@ -53,6 +55,13 @@ public class Lesson05_Retrofit extends BaseActivity {
                     getResponse();
                     hideKeyboard();
                 }
+            }
+        });
+
+        vogellaAction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Les05VogellaActivity.show(Lesson05_Retrofit.this);
             }
         });
     }

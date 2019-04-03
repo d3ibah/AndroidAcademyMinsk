@@ -23,6 +23,10 @@
     <string name="threads_activity">Threads Activity</string>
 
     <string name="lesson_05_Network">05 Network</string>
+    <string name="les05_enter_keyword">Enter keyword</string>
+    <string name="les05_search">Search</string>
+    <string name="les05_poster">Poster</string>
+    <string name="les05_vogella">Vogella</string>
 
     <string name="lesson_06_DB">06 Database</string>
 

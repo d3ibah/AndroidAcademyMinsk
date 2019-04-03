@@ -17,13 +17,13 @@ import by.androidacademyminsk.R;
 public class Les03Adapter extends RecyclerView.Adapter<Les03Adapter.Les03ViewHolder> {
 
     private List<Actor> actorList = DataUri.generateActors();
-    private ClickListenner listenner;
+    private ClickListener listener;
 
-    public Les03Adapter(ClickListenner listenner) {
-        this.listenner = listenner;
+    public Les03Adapter(ClickListener listener) {
+        this.listener = listener;
     }
 
-    interface ClickListenner {
+    interface ClickListener {
         void onClick(int position);
     }
 
@@ -50,7 +50,7 @@ public class Les03Adapter extends RecyclerView.Adapter<Les03Adapter.Les03ViewHol
         les03ViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listenner.onClick(position);
+                listener.onClick(position);
                 Log.e("onClick", "position - " + position);
             }
         });

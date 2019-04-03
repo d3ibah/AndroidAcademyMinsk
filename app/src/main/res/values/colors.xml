@@ -6,6 +6,7 @@
 
 
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteOpacity50">#80FFFFFF</color>
     <color name="colorText">#212121</color>
 
     <color name="colorBtn01">#0288D1</color>

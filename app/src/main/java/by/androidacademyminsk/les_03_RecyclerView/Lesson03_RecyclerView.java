@@ -21,12 +21,11 @@ public class Lesson03_RecyclerView extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.recyclerView);
 
-        adapter = new Les03Adapter(new Les03Adapter.ClickListenner() {
+        adapter = new Les03Adapter(new Les03Adapter.ClickListener() {
             @Override
             public void onClick(int position) {
                 Intent intent = new Intent(Lesson03_RecyclerView.this, Les03FullInfoActivity.class);
-                int pos = position;
-                intent.putExtra("position", pos);
+                intent.putExtra("position", position);
                 startActivity(intent);
             }
         });

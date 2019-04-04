@@ -24,22 +24,22 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson04_asynctask);
 
-        tvAsync = findViewById(R.id.tvAsync);
-        btnAsyncCreate = findViewById(R.id.btnAsyncCreate);
-        btnAsyncStart = findViewById(R.id.btnAsyncStart);
-        btnAsyncCancel = findViewById(R.id.btnAsyncCancel);
-        progressBar = findViewById(R.id.pbAsyncTask);
+        initView();
+        clickCreate();
+        clickStart();
+        clickCancel();
+    }
 
-        btnAsyncCreate.setOnClickListener(new View.OnClickListener() {
+    private void clickCancel() {
+        btnAsyncCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                doCreate();
-                btnAsyncCreate.setEnabled(false);
-                tvAsync.setText("0");
-                progressBar.setVisibility(View.VISIBLE);
+                doCancel();
             }
         });
+    }
 
+    private void clickStart() {
         btnAsyncStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,13 +47,27 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
                 btnAsyncStart.setEnabled(false);
             }
         });
+    }
 
-        btnAsyncCancel.setOnClickListener(new View.OnClickListener() {
+    private void clickCreate() {
+        btnAsyncCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                doCancel();
+                doCreate();
+                btnAsyncCreate.setEnabled(false);
+                tvAsync.setText("0");
+                progressBar.setVisibility(View.VISIBLE);
+                progressBar.setProgress(0);
             }
         });
+    }
+
+    private void initView() {
+        tvAsync = findViewById(R.id.tvAsync);
+        btnAsyncCreate = findViewById(R.id.btnAsyncCreate);
+        btnAsyncStart = findViewById(R.id.btnAsyncStart);
+        btnAsyncCancel = findViewById(R.id.btnAsyncCancel);
+        progressBar = findViewById(R.id.pbAsyncTask);
     }
 
     @Override
@@ -63,7 +77,7 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
 
     @Override
     public void onPostExecute() {
-        tvAsync.setText("Done!");
+        tvAsync.setText(getString(R.string.done));
         btnAsyncCreate.setEnabled(true);
         btnAsyncStart.setEnabled(true);
     }
@@ -90,7 +104,7 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
 
     public void doStart() {
             if ((counterAsyncTask == null) || (counterAsyncTask.isCancelled())) {
-                Toast.makeText(this, "first you must create AsyncTask", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "First you must create AsyncTask", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "AsyncTask started!", Toast.LENGTH_SHORT).show();
                 counterAsyncTask.execute(start, end);
@@ -104,11 +118,17 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
 
     @Override
     protected void onDestroy() {
-//        if (counterAsyncTask != null) {
-//            counterAsyncTask.cancel(true);
-//            counterAsyncTask = null;
-//        }
+        if (counterAsyncTask != null) {
+            counterAsyncTask.cancel(true);
+            counterAsyncTask = null;
+        }
         super.onDestroy();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }
 

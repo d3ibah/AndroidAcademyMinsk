@@ -18,7 +18,7 @@ public class Les04ThreadsActivity extends AppCompatActivity implements IAsyncTas
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons04_threads);
+        setContentView(R.layout.activity_lesson04_threads);
 
         tvAsync = findViewById(R.id.tvAsync);
         btnAsyncCreate = findViewById(R.id.btnThreadsCreate);

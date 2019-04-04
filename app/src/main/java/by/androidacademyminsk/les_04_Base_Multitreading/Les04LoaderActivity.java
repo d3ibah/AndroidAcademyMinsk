@@ -10,6 +10,6 @@ public class Les04LoaderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons04_loader);
+        setContentView(R.layout.activity_lesson04_loader);
     }
 }

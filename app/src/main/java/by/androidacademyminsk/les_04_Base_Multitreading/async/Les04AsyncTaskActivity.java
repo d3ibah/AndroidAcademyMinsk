@@ -12,17 +12,17 @@ import by.androidacademyminsk.R;
 
 public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncTaskEvents {
 
-    TextView tvAsync;
-    Button btnAsyncCreate, btnAsyncStart, btnAsyncCancel;
-    CounterAsyncTask counterAsyncTask;
-    ProgressBar progressBar;
+    private TextView tvAsync;
+    private Button btnAsyncCreate, btnAsyncStart, btnAsyncCancel;
+    private CounterAsyncTask counterAsyncTask;
+    private ProgressBar progressBar;
     private final int start = 0;
     private final int end = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons04_asynctask);
+        setContentView(R.layout.activity_lesson04_asynctask);
 
         tvAsync = findViewById(R.id.tvAsync);
         btnAsyncCreate = findViewById(R.id.btnAsyncCreate);

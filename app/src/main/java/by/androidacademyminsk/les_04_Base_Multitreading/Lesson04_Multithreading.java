@@ -16,7 +16,7 @@ public class Lesson04_Multithreading extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons04);
+        setContentView(R.layout.activity_lesson04);
         buttonAsync = findViewById(R.id.buttonAsync);
         buttonLoader = findViewById(R.id.buttonLoader);
         buttonThreads = findViewById(R.id.buttonThreads);

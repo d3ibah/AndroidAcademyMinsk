@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import by.androidacademyminsk.R;
 
-public class Les04ThreadsActivity extends AppCompatActivity implements IAsyncTaskEvents{
+public class Les04ThreadsActivity extends AppCompatActivity implements IAsyncTaskEvents {
 
     private TextView tvAsync;
     private Button btnAsyncCreate, btnAsyncStart, btnAsyncCancel;
@@ -32,13 +32,17 @@ public class Les04ThreadsActivity extends AppCompatActivity implements IAsyncTas
 
     @Override
     public void onPreExecute() {
-        Toast.makeText(this, getString(R.string.les04_on_pre_execute), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.les04_on_pre_execute), Toast.LENGTH_SHORT)
+             .show();
     }
 
     @Override
     public void onPostExecute() {
-        Toast.makeText(this, getString(R.string.les04_on_post_execute), Toast.LENGTH_SHORT).show();
-        tvAsync.setText(getString(R.string.les04_done));
+        if (!mySimpleAsyncTask.isCanceled) {
+            tvAsync.setText(getString(R.string.les04_done));
+        }
+        Toast.makeText(this, getString(R.string.les04_on_post_execute), Toast.LENGTH_SHORT)
+             .show();
     }
 
     @Override
@@ -50,7 +54,9 @@ public class Les04ThreadsActivity extends AppCompatActivity implements IAsyncTas
 
     @Override
     public void onCancel() {
-        Toast.makeText(this, getString(R.string.les04_cancel), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.les04_cancel), Toast.LENGTH_SHORT)
+             .show();
+        tvAsync.setText(getString(R.string.les04_cancel));
     }
 
     @Override
@@ -62,11 +68,11 @@ public class Les04ThreadsActivity extends AppCompatActivity implements IAsyncTas
         super.onDestroy();
     }
 
-    private void onClickCancel() {
-        btnAsyncCancel.setOnClickListener(new View.OnClickListener() {
+    private void onClickCreate() {
+        btnAsyncCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                doThreadsCancel();
+                doThreadsCreate();
             }
         });
     }
@@ -80,29 +86,31 @@ public class Les04ThreadsActivity extends AppCompatActivity implements IAsyncTas
         });
     }
 
-    private void onClickCreate() {
-        btnAsyncCreate.setOnClickListener(new View.OnClickListener() {
+    private void onClickCancel() {
+        btnAsyncCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                doThreadsCreate();
+                doThreadsCancel();
             }
         });
     }
 
     private void doThreadsCreate() {
-        Toast.makeText(this, getString(R.string.les04_create), Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.les04_create), Toast.LENGTH_SHORT)
+             .show();
         mySimpleAsyncTask = new CounterThread(this);
     }
 
     private void doThreadsStart() {
-        if(mySimpleAsyncTask == null || mySimpleAsyncTask.isCanceled()){
-            Toast.makeText(this, getString(R.string.les04_warning), Toast.LENGTH_SHORT).show();
+        if (mySimpleAsyncTask == null || mySimpleAsyncTask.isCanceled()) {
+            Toast.makeText(this, getString(R.string.les04_warning), Toast.LENGTH_SHORT)
+                 .show();
         } else {
             mySimpleAsyncTask.execute();
         }
     }
 
     private void doThreadsCancel() {
-            mySimpleAsyncTask.cancel();
+        mySimpleAsyncTask.cancel();
     }
 }

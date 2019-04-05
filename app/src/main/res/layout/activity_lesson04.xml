@@ -17,7 +17,7 @@
         android:layout_marginTop="16dp"
         android:layout_weight="1"
         android:background="@color/colorAsync"
-        android:text="@string/asynctask_activity"
+        android:text="@string/les04_asynctask_activity"
         android:textAllCaps="false"
         android:textColor="@color/colorMultiThreadsText"
         android:textSize="30sp" />
@@ -32,7 +32,7 @@
         android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:background="@color/colorLoader"
-        android:text="@string/loader_activity"
+        android:text="@string/les04_loader_activity"
         android:textAllCaps="false"
         android:textColor="#BDBDBD"
         android:textSize="30sp" />
@@ -47,7 +47,7 @@
         android:layout_marginTop="8dp"
         android:layout_weight="1"
         android:background="@color/colorThreads"
-        android:text="@string/threads_activity"
+        android:text="@string/les04_threads_activity"
         android:textAllCaps="false"
         android:textColor="@color/colorMultiThreadsText"
         android:textSize="30sp" />

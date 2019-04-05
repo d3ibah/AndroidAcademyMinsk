@@ -77,7 +77,7 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
 
     @Override
     public void onPostExecute() {
-        tvAsync.setText(getString(R.string.done));
+        tvAsync.setText(getString(R.string.les04_done));
         btnAsyncCreate.setEnabled(true);
         btnAsyncStart.setEnabled(true);
     }

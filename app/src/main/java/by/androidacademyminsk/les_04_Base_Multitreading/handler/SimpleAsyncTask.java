@@ -12,8 +12,7 @@ public abstract class SimpleAsyncTask<Param> {
 
     protected abstract void execute();
 
-    protected void onProgressUpdate(Param... values) {
-    }
+    protected abstract void onProgressUpdate(Param... values);
 
     protected abstract void publishProgress(Param... values);
 

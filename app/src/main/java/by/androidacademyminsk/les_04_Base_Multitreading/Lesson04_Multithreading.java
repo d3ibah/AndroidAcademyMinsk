@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import by.androidacademyminsk.R;
 import by.androidacademyminsk.les_04_Base_Multitreading.async.Les04AsyncTaskActivity;
 import by.androidacademyminsk.les_04_Base_Multitreading.handler.Les04ThreadsActivity;
+import by.androidacademyminsk.les_04_Base_Multitreading.loader.Les04LoaderActivity;
 
 public class Lesson04_Multithreading extends AppCompatActivity {
     private Button buttonAsync, buttonLoader, buttonThreads;
@@ -16,7 +17,7 @@ public class Lesson04_Multithreading extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lessons04);
+        setContentView(R.layout.activity_lesson04);
         buttonAsync = findViewById(R.id.buttonAsync);
         buttonLoader = findViewById(R.id.buttonLoader);
         buttonThreads = findViewById(R.id.buttonThreads);

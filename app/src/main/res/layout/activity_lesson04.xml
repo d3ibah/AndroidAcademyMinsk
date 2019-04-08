@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".les_04_Base_Multitreading.Lesson04_Multithreading">
+
+    <Button
+        android:id="@+id/buttonAsync"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@color/colorAsync"
+        android:text="@string/les04_asynctask_activity"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMultiThreadsText"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/colorLoader"
+        android:text="@string/les04_loader_activity"
+        android:textAllCaps="false"
+        android:textColor="#BDBDBD"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonThreads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/colorThreads"
+        android:text="@string/les04_threads_activity"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMultiThreadsText"
+        android:textSize="30sp" />
+</LinearLayout>

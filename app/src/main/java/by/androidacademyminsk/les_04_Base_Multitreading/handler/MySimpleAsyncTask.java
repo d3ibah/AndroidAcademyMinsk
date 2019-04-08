@@ -1,6 +1,5 @@
 package by.androidacademyminsk.les_04_Base_Multitreading.handler;
 
-
 import android.os.Handler;
 import android.os.Looper;
 
@@ -38,10 +37,10 @@ public abstract class MySimpleAsyncTask <Param> extends SimpleAsyncTask<Param>{
     @Override
     public void cancel() {
         isCanceled = true;
+
         if (backgroundThread != null){
             backgroundThread.interrupt();
         }
-
     }
 
     @SafeVarargs

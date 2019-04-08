@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">AndroidAcademyMinsk</string>
+
+    <string name="create">Create</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
     <string name="activity">Activity</string>
     <string name="email">Email</string>
     <string name="type_message">Type your message here...</string>
@@ -17,10 +21,21 @@
     <string name="lesson_03_RecyclerView">03 RecyclerView</string>
     <string name="name_lesson_03_RecyclerView">Lesson 03_RecyclerView</string>
 
-    <string name="lesson_04_MultiThreads">04 MultiThreads</string>
-    <string name="asynctask_activity">AsyncTask Activity</string>
-    <string name="loader_activity">Loader Activity</string>
-    <string name="threads_activity">Threads Activity</string>
+    <string name="les04_MultiThreads">04 MultiThreads</string>
+    <string name="les04_asynctask_activity">AsyncTask Activity</string>
+    <string name="les04_loader_activity">Loader Activity</string>
+    <string name="les04_threads_activity">Threads Activity</string>
+    <string name="les04_done">Done!</string>
+    <string name="les04_warning">First create!</string>
+    <string name="les04_create">Create!</string>
+    <string name="les04_cancel">Cancel!</string>
+    <string name="les04_on_pre_execute">onPreExecute</string>
+    <string name="les04_on_post_execute">onPostExecute</string>
+    <string name="les04_wip">Work in progress</string>
+    <string name="les04_illegal_argument_exception">Unknown loader id</string>
+    <string name="les04_message_on_post_execute">Post execute run</string>
+    <string name="les04_work_interrupted">Work interrupted</string>
+    <string name="les04_status">Status:</string>
 
     <string name="lesson_05_Network">05 Network</string>
     <string name="les05_enter_keyword">Enter keyword</string>

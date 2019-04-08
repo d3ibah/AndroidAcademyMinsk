@@ -65,7 +65,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorBtn04"
-        android:text="@string/lesson_04_MultiThreads"
+        android:text="@string/les04_MultiThreads"
         android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -52,4 +52,13 @@ public class CounterThread extends MySimpleAsyncTask<Integer> {
             asyncTaskEvents.onProgressUpdate(values[0]);
         }
     }
+
+    @Override
+    public void cancel() {
+        super.cancel();
+        IAsyncTaskEvents asyncTaskEvents = iAsyncTaskEventsReference.get();
+        if (asyncTaskEvents != null){
+            asyncTaskEvents.onCancel();
+        }
+    }
 }

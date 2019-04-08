@@ -31,6 +31,11 @@
     <string name="les04_cancel">Cancel!</string>
     <string name="les04_on_pre_execute">onPreExecute</string>
     <string name="les04_on_post_execute">onPostExecute</string>
+    <string name="les04_wip">Work in progress</string>
+    <string name="les04_illegal_argument_exception">Unknown loader id</string>
+    <string name="les04_message_on_post_execute">Post execute run</string>
+    <string name="les04_work_interrupted">Work interrupted</string>
+    <string name="les04_status">Status:</string>
 
     <string name="lesson_05_Network">05 Network</string>
     <string name="les05_enter_keyword">Enter keyword</string>

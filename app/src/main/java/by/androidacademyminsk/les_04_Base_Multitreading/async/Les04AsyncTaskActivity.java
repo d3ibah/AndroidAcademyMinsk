@@ -43,8 +43,8 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
         btnAsyncStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                doStart();
                 btnAsyncStart.setEnabled(false);
+                doStart();
             }
         });
     }
@@ -105,6 +105,7 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
     public void doStart() {
             if ((counterAsyncTask == null) || (counterAsyncTask.isCancelled())) {
                 Toast.makeText(this, "First you must create AsyncTask", Toast.LENGTH_SHORT).show();
+                btnAsyncStart.setEnabled(true);
             } else {
                 Toast.makeText(this, "AsyncTask started!", Toast.LENGTH_SHORT).show();
                 counterAsyncTask.execute(start, end);
@@ -112,8 +113,11 @@ public class Les04AsyncTaskActivity extends AppCompatActivity implements IAsyncT
     }
 
     public void doCancel() {
-        counterAsyncTask.cancel(true);
-        Toast.makeText(this, "AsyncTask is canceled", Toast.LENGTH_SHORT).show();
+        if (counterAsyncTask != null) {
+            counterAsyncTask.cancel(true);
+            Toast.makeText(this, "AsyncTask is canceled", Toast.LENGTH_SHORT)
+                 .show();
+        }
     }
 
     @Override

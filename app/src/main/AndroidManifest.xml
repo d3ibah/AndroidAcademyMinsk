@@ -42,7 +42,7 @@
         <activity android:name=".les_05_Retrofit.Lesson05_Retrofit" />
         <activity android:name=".les_05_Retrofit.Les05VogellaActivity" />
         <activity android:name=".les_05_Retrofit.Les05ActivityInfo" />
-        <activity android:name=".les_06_DB.Lesson06_DB" />
+        <activity android:name=".les_06_DB.Lesson06_Activity" />
     </application>
 
 </manifest>

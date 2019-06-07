@@ -12,7 +12,7 @@ import by.androidacademyminsk.les_02_Layout.Lesson02_Layout;
 import by.androidacademyminsk.les_03_RecyclerView.Lesson03_RecyclerView;
 import by.androidacademyminsk.les_04_Base_Multitreading.Lesson04_Multithreading;
 import by.androidacademyminsk.les_05_Retrofit.Lesson05_Retrofit;
-import by.androidacademyminsk.les_06_DB.Lesson06_DB;
+import by.androidacademyminsk.les_06_DB.Lesson06_Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
         buttonLes06.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Lesson06_DB.class);
+                Intent intent = new Intent(MainActivity.this, Lesson06_Activity.class);
                 startActivity(intent);
             }
         });
